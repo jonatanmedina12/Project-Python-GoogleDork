@@ -43,7 +43,7 @@ class FileDownloader:
 
 
 def check_virus(file_path):
-    # Esta es una implementación básica. En un escenario real, 
+    #todo Esta es una implementación básica. En un escenario real,
     # deberías usar una API de antivirus o una biblioteca más robusta.
     try:
         with open(file_path, "rb") as file:
