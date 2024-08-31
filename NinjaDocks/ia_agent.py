@@ -62,7 +62,9 @@ class IAAgent:
 if __name__ == "__main__":
     description = "Listado de usuarios y contraseñas en el contenido de ficheros de texto"
     ia = IAAgent()
+    prompt=ia._build_prompt(description)
+
     if ia.model is not None:
-        print(ia.generate_dork(description))
+        print(ia.generate_dork(prompt))
     else:
         print("No se pudo inicializar el modelo. Por favor, revise los mensajes de error anteriores.")
